@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden pt-24 pb-16 lg:pt-32 lg:pb-24 bg-[#091E1F]">
+    <section id="hero" className="relative min-h-[92vh] flex items-center justify-center overflow-hidden pt-24 pb-16 lg:pt-32 lg:pb-24 bg-[#091E1F]">
       {/* Background Image with Ken Burns slow zoom + deep gradient overlay */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img

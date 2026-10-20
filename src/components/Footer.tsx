@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 pb-12 border-b border-[#123D3E]/60">
           {/* Col 1: Brand & Leaders League */}
           <div className="space-y-4">
-            <a href="/" className="inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-[#43A997]">
+            <a href="#hero" className="inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-[#43A997]">
               <img
                 src="https://bustosgomez.cl/wp-content/uploads/2021/03/logobg.png"
                 alt="BG Abogados — Bustos Gómez Abogados Penalistas"

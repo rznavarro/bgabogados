@@ -37,7 +37,7 @@ export const Header: React.FC = () => {
         <div className="flex items-center justify-between gap-8 h-12">
           {/* Zone 1: Brand Wordmark / Logo */}
           <a
-            href="/"
+            href="#hero"
             className="flex items-center shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#43A997] rounded"
             aria-label="BG Abogados Penalistas - Inicio"
           >
