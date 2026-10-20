@@ -1,0 +1,6 @@
+{
+  "name": "BG Abogados — Penalistas en Santiago",
+  "description": "Landing de conversión para BG Abogados (Bustos Gómez Abogados Penalistas). Defensa y querellas penales en Santiago y todo Chile.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

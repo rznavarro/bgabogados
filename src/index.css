@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-petrol: #195153;
+    --color-petrol-deep: #123D3E;
+    --color-petrol-dark: #091E1F;
+    --color-jade: #43A997;
+    --color-text-dark: #2D3748;
+    --color-text-muted: #718096;
+    --color-bg-light: #F8F8F8;
+  }
+
+  html {
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+    color: var(--color-text-dark);
+    background-color: var(--color-bg-light);
+  }
+}
+
+/* Hero subtle Ken Burns zoom animation */
+@keyframes heroKenBurns {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* WhatsApp soft pulse glow */
+@keyframes whatsappGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(67, 169, 151, 0.5), 0 10px 25px -5px rgba(9, 30, 31, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(67, 169, 151, 0), 0 10px 25px -5px rgba(9, 30, 31, 0.4);
+  }
+}
+
+.animate-hero-bg {
+  animation: heroKenBurns 22s ease-in-out infinite alternate;
+}
+
+.animate-wa-pulse {
+  animation: whatsappGlow 6s infinite ease-in-out;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-bg,
+  .animate-wa-pulse,
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #091E1F;
+}
+::-webkit-scrollbar-thumb {
+  background: #195153;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #43A997;
+}
